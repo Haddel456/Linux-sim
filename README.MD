@@ -1,17 +1,18 @@
 # Linux File System Simulation in C++
 
-**Overview**
+## Overview
 
 This project implements a Linux-style file system simulation, demonstrating how operating systems manage files and storage internally. It provides a block-based disk simulation with inodes, file descriptors, and core file system operations.
 
 The project is primarily designed for educational purposes to explore file system concepts, including disk block allocation, file metadata management, and basic file operations.
 
-**Goal**
+## Goal
+
 The goal of this project is to provide a hands-on simulation of low-level file system operations similar to how Linux handles files internally.
 
-**Features**
+## Features
 
-## File Management
+**File Management**
 
 - Create files with unique inodes.
 - Open / Close files with different modes (r, w, rw, a).
@@ -20,7 +21,7 @@ The goal of this project is to provide a hands-on simulation of low-level file s
 - Delete files safely, handling open file descriptors correctly.
 - Copy & Rename files with full data integrity.
 
-## Disk & Block Management
+**Disk & Block Management**
 
 - Simulated disk divided into fixed-size blocks (configurable, e.g., 512 bytes per block).
 - Free block management using a bit vector.
@@ -31,7 +32,7 @@ The goal of this project is to provide a hands-on simulation of low-level file s
 - FileDescriptor class: tracks open file handles, mode, and current read/write position.
 - fsDisk class: manages disk operations, directory structure, inodes, and file descriptors.
 
-## Error Handling
+**Error Handling**
 
 - Throws exceptions for:
 - File not found
