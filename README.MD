@@ -41,7 +41,7 @@ The goal of this project is to provide a hands-on simulation of low-level file s
 - Disk full
 - Invalid read/write operations
 
-**Project Structure**
+## Project Structure
 
 - FileDescriptor — Represents open files with mode and position.
 - fsInode — Tracks metadata, block allocations, and size.
